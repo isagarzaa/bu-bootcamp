@@ -1,6 +1,6 @@
-package Module3;
+package module3;
 import java.util.*; 
-import Module3.Contact;
+import module3.Contact;
 
 public class ContactManager {
     public static void main(String[] args) { 

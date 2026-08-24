@@ -37,4 +37,11 @@ public class ContactTest {
   void toString_containsPhone() {
     assertTrue(contact.toString().contains("+1 617 555 0101"));
   }
+  
+  @Test
+  void twoContactsWithSameNameAreIndependent() {
+    Contact duplicate = new Contact("Ada Lovelace", "+1 321 897 2718");
+    assertNotEquals(contact, duplicate);
+    
+  }
 } 
